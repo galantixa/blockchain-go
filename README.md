@@ -12,5 +12,5 @@ Blockchain-go
 │   └── client.go           
 │  
 ├── go.mod               
-│  
-└── README.md  
+│
+└── README.md

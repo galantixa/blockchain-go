@@ -52,7 +52,7 @@ func GenerateGenesisBlock() Block {
 	transactions := []Transaction{
 		{
 			From:      "Prometheus",
-			To:        "address1",
+			To:        "Adam",
 			Amount:    100.0,
 			Timestamp: time.Now().String(),
 		},
