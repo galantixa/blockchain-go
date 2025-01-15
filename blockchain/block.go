@@ -48,13 +48,20 @@ func GenerateBlock(oldBlock Block, newBlock Block, BPM int, transactions []Trans
 }
 
 // Initialize Genesis block
-func CreateGenesisBlock(data []string, transactions []Transaction) Block {
+func GenerateGenesisBlock() Block {
+	transactions := []Transaction{
+		{
+			From:      "Prometheus",
+			To:        "address1",
+			Amount:    100.0,
+			Timestamp: time.Now().String(),
+		},
+	}
 	return Block{
 		Index:        0,
 		Timestamp:    time.Now().String(),
-		PrevHash:     "",
 		Transactions: transactions,
-		BPM:          0,
+		PrevHash:     "",
 		Hash: CalculateHash(Block{
 			Index:        0,
 			Timestamp:    time.Now().String(),

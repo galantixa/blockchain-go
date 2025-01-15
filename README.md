@@ -1,16 +1,16 @@
 Blockchain-go
 
 │  
-├── main.go                # File utama yang berisi kode untuk blockchain dan komunikasi antar node  
+├── main.go                  
 │  
-├── blockchain/            # Direktori untuk logika blockchain  
-│   ├── block.go           # Definisi struktur blok dan fungsi terkait blok  
-│   └── blockchain.go      # Definisi struktur node dan fungsi terkait blockchain  
+├── blockchain/              
+│   ├── block.go             
+│   └── blockchain.go       
 │  
-├── network/               # Direktori untuk logika jaringan  
-│   ├── server.go          # Kode untuk server yang mendengarkan koneksi dari node lain  
-│   └── client.go          # Kode untuk klien yang mengirim data ke node lain  
+├── network/                
+│   ├── server.go           
+│   └── client.go           
 │  
-├── go.mod                 # File modul Go  
+├── go.mod               
 │  
-└── README.md              # File dokumentasi proyek  
+└── README.md  
